@@ -1,0 +1,50 @@
+{
+  "name": "typescript-multiclass",
+  "description": "Multiple inheritance for Javascript ES6",
+  "version": "0.1.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iliadwebdev/iliad-standard-issue"
+  },
+  "scripts": {
+    "build": "env NODE_ENV=production tsup && tsup",
+    "build:dev": "tsup --watch",
+    "dev": "tsx watch src/index.ts"
+  },
+  "license": "ISC",
+  "author": "Smoke3785",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.cjs",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "dependencies": {
+    "putil-merge": "^3.10.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-google": "^0.14.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/deasync": "^0.1.5",
+    "@types/node": "^22.10.1",
+    "@types/qs": "^6.9.15",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "rollup": "^4.17.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2"
+  },
+  "engines": {
+    "node": ">= 6.0"
+  }
+}

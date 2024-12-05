@@ -4,14 +4,14 @@
 [![Iliad Badge][iliad-img]][iliad-url]
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
 
 `typescript-multiclass`
 
 ## About
 
-Multiple class inheritence like in Java. This is a re-write of 
+Multiple class inheritence like in Java. 
+
+> This is a re-write of [Panates - Multi Extend](https://github.com/panates/multiple-extend) because the latest version is messed up in one way and the older version is messed up in another.
 
 ## Installation
 
@@ -19,7 +19,7 @@ Multiple class inheritence like in Java. This is a re-write of
 
 ## Usage
 
-```js
+```tsx
 import classes from 'typescript-multiclass';
 
 class Character {
@@ -91,7 +91,7 @@ Diver constructor will be called with arguments at index from 3 to Last.
 
 You can check if extended class and its instance has implemented any class.
 
-````js
+````tsx
 const classes = require('typescript-multiclass');
 const Implemented = classes.Implemented; // Special symb ol
 
